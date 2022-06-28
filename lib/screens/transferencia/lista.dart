@@ -62,7 +62,7 @@ class ItemTranferencia extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: const Icon(Icons.monetization_on),
-        title: Text(_transferencia.valor.toString()),
+        title: Text('R\$ ${_transferencia.valor}'),
         subtitle: Text(_transferencia.numeroConta.toString()),
       ),
     );

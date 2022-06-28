@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 import '../../components/editor.dart';
 import '../../models/transferencia.dart';
@@ -38,13 +37,11 @@ class FormularioTransferenciaState extends State<FormularioTransferencia> {
         child: Column(
           children: [
             Editor(
-              mask: MaskTextInputFormatter(mask: '#####-#'),
               dica: _dicaCampoNumeroConta,
               controller: _controllerCampoNumeroConta,
               rotulo: _rotuloCampoNumeroConta,
             ),
             Editor(
-              mask: MaskTextInputFormatter(mask: ''),
               dica: _dicaCampoValor,
               controller: _controllerCampoValor,
               rotulo: _rotuloCampoValor,
